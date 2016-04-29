@@ -1,0 +1,30 @@
+{
+  "mappings": {
+    "users":  {
+      "_source":  {
+        "enabled":  true
+      },
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "store": true,
+          "analyzer": "custom_test"
+        },
+        "lastName": {
+          "type": "string",
+          "store": true,
+          "analyzer": "custom_test"
+        },
+        "billingId": {
+          "type": "string",
+          "store": true,
+          "analyzer": "standard"
+        },
+        "id": {
+          "type": "long",
+          "store": true
+        }
+      }
+    }
+  }
+}
